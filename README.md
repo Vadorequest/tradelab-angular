@@ -6,6 +6,11 @@ The functional specification can be found in the **doc** folder.
 
 The goal is to make the given application, following the given specifications with Angular.js front-end framework.
 
+## Getting started
+
+1. `npm install && bower install`
+2. `node server.js`
+3. Go to `http://localhost:9001/`
 
 ## TODO list
 
