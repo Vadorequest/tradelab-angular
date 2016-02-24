@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Weather App</title>
+
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="components/angular/angular.js"></script>
+        <script src="components/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="components/ui-router-extras/release/ct-ui-router-extras.js"></script>
+
+        <script src="appCtrl.js"></script>
+        <script src="services/CityService.js"></script>
+        <script src="routes.js"></script>
+        <script src="directives/tdlWeather/tdlWeather.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/weathericons.css" />
+
+        <link rel="stylesheet" href="directives/tdlWeather/tdlWeather.css" />
+    </head>
+
+    <body ng-app="app">
+        <tdl-weather
+                title="Sélectionner une ville"
+        ></tdl-weather>
+
+    </body>
+</html>
