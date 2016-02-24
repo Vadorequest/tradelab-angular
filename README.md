@@ -11,12 +11,12 @@ The goal is to make the given application, following the given specifications wi
 
 **Base features:**
 
+- [ ] Angular setup. (20mn)
 - [ ] HTML (20mn)
     - [ ] select box
     - [ ] city name
     - [ ] area for today's result
     - [ ] area for next three days results
-- [ ] Angular setup. (20mn)
 - [ ] Call API endpoint to get the data for today. (30mn)
 - [ ] Call API endpoint to get the data for the next three days. (15mn)
 - [ ] Display API results. (30mn)
@@ -35,6 +35,8 @@ Total estimated time: 155mn
 Total estimated time (with optional features): 205mn
 
 *Misc:*
-- Reading specs and project management (30mn)
 
-Total estimated time (with optional features and misc): 235mn
+- [ ] Reading specs and project management (30mn)
+- [x] Serve static file through node server. (~~10mn~~ 5mn)
+
+Total estimated time (with optional features and misc): 245mn

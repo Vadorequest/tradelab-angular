@@ -1,0 +1,9 @@
+{
+  "name": "tradelab-angular",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "angular-ui-router": "0.2.17",
+    "ui-router-extras": "0.1.0"
+  }
+}

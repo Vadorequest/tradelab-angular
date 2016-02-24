@@ -1,0 +1,13 @@
+<div class="tld-weather">
+    <div class="title">{{title}}</div>
+    <select
+            class="select"
+            ng-model="city"
+            name="city"
+            ng-required="true"
+            ng-options="option.nm for option in cities track by option.id"
+            ng-change="onChange"
+    >
+
+    </select>
+</div>
