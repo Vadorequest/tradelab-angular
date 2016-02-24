@@ -24,7 +24,7 @@
                 ng-repeat="result in forecast.list"
                 class="col-xs-4"
             >
-                <div class="title" ng-bind="city.nm"></div>
+                <div class="title">{{result.dt | weekDay}}</div>
                 <span class="icon wi wi-icon-{{result.weather[0].id}} icon-md"></span>
                 <div class="temperature temperature-max">{{result.temp.max | floor}}</div>
                 <div class="temperature temperature-min">{{result.temp.min | floor}}</div>
