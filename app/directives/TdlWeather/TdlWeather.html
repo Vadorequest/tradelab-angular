@@ -1,13 +1,34 @@
-<div class="tld-weather">
-    <div class="title">{{title}}</div>
-    <select
-            class="select"
+<div class="tld-weather container-fluid col-xs-6 col-xs-offset-3">
+    <div class="city-select input-group col-xs-12">
+        <div class="title">{{title}}</div>
+        <select
+            class="select form-control"
             ng-model="city"
             name="city"
             ng-required="true"
             ng-options="option.nm for option in cities track by option.id"
             ng-change="onChange"
-    >
+        ></select>
+    </div>
 
-    </select>
+    <div class="results col-xs-12 ">
+        <div class="results-today">
+            <div class="title" ng-bind="city.nm"></div>
+            <span class="icon wi wi-icon-{{current.weather[0].id}} icon-bg"></span>
+            <div class="temperature">{{current.main.temp | floor}}°</div>
+        </div>
+
+        <!-- TODO ng-include -->
+        <div class="results-next-three-days col-xs-12">
+            <div
+                ng-repeat="result in forecast.list"
+                class="col-xs-4"
+            >
+                <div class="title" ng-bind="city.nm"></div>
+                <span class="icon wi wi-icon-{{result.weather[0].id}} icon-md"></span>
+                <div class="temperature temperature-max">{{result.temp.max | floor}}</div>
+                <div class="temperature temperature-min">{{result.temp.min | floor}}</div>
+            </div>
+        </div>
+    </div>
 </div>
