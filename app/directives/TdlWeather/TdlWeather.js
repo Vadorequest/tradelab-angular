@@ -75,8 +75,9 @@ angular.module('app').directive('tdlWeather', function(CityService, WeatherServi
                     });
             };
 
-            scope.onChange = function(input){
-                console.log(input)
+            scope.onChange = function(){
+                _updateCurrent(scope.city);
+                _updateForecast(scope.city);
             };
         }
     }
