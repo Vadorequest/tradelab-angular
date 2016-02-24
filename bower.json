@@ -5,6 +5,7 @@
   "dependencies": {
     "angular-ui-router": "0.2.17",
     "ui-router-extras": "0.1.0",
-    "moment": "~2.11.2"
+    "moment": "~2.11.2",
+    "font-awesome": "~4.5.0"
   }
 }

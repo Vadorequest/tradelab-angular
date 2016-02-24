@@ -11,15 +11,22 @@
         ></select>
     </div>
 
-    <div class="results col-xs-12 ">
-        <div class="results-today">
+    <div
+        class="results col-xs-12"
+        ng-show="helper.isReady_current && helper.isReady_forecast"
+    >
+        <div
+            class="results-today"
+        >
             <div class="title" ng-bind="city.nm"></div>
             <span class="icon wi wi-icon-{{current.weather[0].id}} icon-bg"></span>
             <div class="temperature">{{current.main.temp | floor}}°</div>
         </div>
 
         <!-- TODO ng-include -->
-        <div class="results-next-three-days col-xs-12">
+        <div
+            class="results-next-three-days col-xs-12"
+        >
             <div
                 ng-repeat="result in forecast.list"
                 class="col-xs-4"
@@ -30,5 +37,12 @@
                 <div class="temperature temperature-min">{{result.temp.min | floor}}</div>
             </div>
         </div>
+    </div>
+
+    <div
+        class="spinner"
+        ng-show="!helper.isReady_current || !helper.isReady_forecast"
+    >
+        <i class="fa fa-spinner fa-spin fa-5x"></i>
     </div>
 </div>
