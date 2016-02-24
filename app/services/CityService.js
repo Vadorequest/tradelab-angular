@@ -12,7 +12,6 @@ angular.module('app').service('CityService', function($http){
         this.req.success((function(_this) {
             return function(cities) {
                 _this.cities = cities;
-                console.log(_this.cities)
                 return _this.req = null;
             };
         })(this));

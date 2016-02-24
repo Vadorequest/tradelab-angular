@@ -1,7 +1,58 @@
 .tld-weather{
-
+    background-color: mediumpurple;
+    border-radius: 5px;
+    padding: 15px;
 }
 
 .tld-weather .select {
-    min-width: 150px;
+}
+.tld-weather .city-select .title {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.tld-weather .results {
+    margin-top: 10px;
+}
+
+.tld-weather .results .results-next-three-days {
+    padding-top: 20px;
+}
+
+.tld-weather .results .results-today .title,
+.tld-weather .results .results-next-three-days .title {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 16px;
+    background-color: slateblue;
+    padding: 5px;
+}
+
+.tld-weather .results {
+    text-align: center;
+}
+.tld-weather .results .results-today .temperature,
+.tld-weather .results .results-next-three-days .temperature {
+    padding-top: 20px;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.tld-weather .results .results-next-three-days > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Custom sizes for icons. */
+.icon-bg {
+    font-size: 60px
+}
+.icon-md {
+    font-size: 30px
+}
+
+/* All or icons must be white. */
+.wi{
+    color: whitesmoke;
 }
